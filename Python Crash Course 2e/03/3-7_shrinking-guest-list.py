@@ -2,6 +2,7 @@ guests = ["Peter", "Cathy", "Leon"]
 
 for guest in guests:
     print(f"Hello, {guest}!  You are invited to a dinner party.")
+print(len(guests), "guests have been invited")
 
 print("\nWe have room for more guests at the dinner party.")
 
@@ -16,14 +17,16 @@ guests.insert(middle, "Hayden")
 guests.append("Bryan")
 
 for guest in guests:
-    print(f"Hello, {guest}!  You are invited to a dinner party.")
+    print(f"\nHello, {guest}!  You are invited to a dinner party.")
+    print(len(guests), "guests have been invited")
 
 print("\nWe have no room for guests at the dinner party.")
 
 # Remove guests from the end of the list until 2 guests are left
 
 while len(guests) > 2:
-    print(f"Sorry, {guests.pop()}!  We have no more room at the dinner party.")
+    print(f"\nSorry, {guests.pop()}!  We have no more room at the dinner party.")
+    print(len(guests), "guests have been invited")
 
 # Message for remaining guests
 for guest in guests:
@@ -33,3 +36,4 @@ for guest in guests:
 while len(guests) > 0:
     del guests[0]
     print(guests)
+    print(len(guests), "guests have been invited")
